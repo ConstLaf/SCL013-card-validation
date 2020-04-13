@@ -16,14 +16,8 @@
     <section id="pag_Bienvenida">
         <div id="foto_inicio" class="box">
             <img src="https://www.dpogroup.com/africa/wp-content/uploads/2018/06/shutterstock_313339838_1440.jpg" class="responsive">
-            <br>
-            <br>
-            <br>
-            <br>
             <h2>Para continuar con tu compra, debes validar tu número de tarjeta de crédito</h2>
-            <br>
             <h2>¡Haz click en "Iniciar"!</h2>
-            <br>
             <form>
                 <button type="button" id="iniciar">Iniciar</button>
             </form>
@@ -33,16 +27,12 @@
     <section id="validar_tarjeta">
         <div class="box">
         
-            <h3>Ingresa tu N° de Tarjeta de Crédito</h3>
-            <br>
-            <form>
-                <input type="text" placeholder="1111 2222 3333 4444" maxlength="16">
-                <br>
-                <br>
-                <br>
-            
+            <h3 >Ingresa tu N° de Tarjeta de Crédito</h3>
+                <form>
+                <input type="text" id="cardNumber" placeholder="1111 2222 3333 4444" maxlength="16" required>
+                 <!--value="4049849606388036"-->
                 <button type="button" id="validate">Validar</button>
-                <button type="button" id="goBack">Volver</button>
+                <button type="button" class="goBack">Volver</button>
             </form>
         </div>
     </section>
@@ -50,25 +40,22 @@
     <section id="tarjeta_valida">
         <div class="box">
             <h3>Ingresa tu N° de Tarjeta de Crédito</h3>
+            <label id="maskifiedNumber"></label>
             <form>
-                <input type="text" placeholder="1111 2222 3333 4444" maxlength="16">
-                <p>¡Tarjeta validada!</p>
-                <p id="exito">¡Tu compra se ha realizado con éxito!</p>
-                <button type="button" id="validate">Validar</button>
-                <button type="button" id="goBack">Volver</button>
-        </div>    
+                <p class="validated">¡Tarjeta validada!</p>
+                <p class="validated">¡Tu compra se ha realizado con éxito!</p>
+                <button type="button" class="goBack">Volver</button>
             </form>
+        </div>    
     </section>
 
-    <section id="tarjeta_No_valida">
+    <section id="tarjeta_no_valida">
         <div class="box">
-            <h3>Ingresa tu N° de Tarjeta de Crédito</h3>
             <form>
-                <button type="button" id="tryAgain">Vuelve a validar</button>
-                <input type="text" placeholder="1111 2222 3333 4444" maxlength="16">
-                <p id="noExito">¡Tarjeta no válida!</p>
+                <p>¡Tarjeta no válida!</p>
                 <p>Vuelve a intentarlo</p>
-                <button type="button" id="goBack">Volver</button>
+                <button type="button" class="goBack">Volver</button>
+                <button type="button" id="tryAgain">Intentar de nuevo</button>
             </form>
         </div>
     </section>
