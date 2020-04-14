@@ -4,7 +4,7 @@
 const validator = {
 
     isValid: function (creditCardNumber) {    
-        let hasToDuplicate = false; //interruptor ON/OFF
+        let hasToDuplicate = false; //interruptor ON/OFF. Permite multiplicar en las posiciones pares
         let sum = 0;                //suma de los carácteres final
         
         for (let index = creditCardNumber.length - 1; index >= 0; index--) { // itera del último hacia el primeroN°[0-n]
@@ -29,10 +29,10 @@ const validator = {
     },
 
     maskify: function (creditCardNumber) {
-        const toOfuscate = creditCardNumber.substr(0, creditCardNumber.length - 4);
-        const lastFourDigits = creditCardNumber.substr(creditCardNumber.length - 4, creditCardNumber.length);
+        const toOfuscate = creditCardNumber.substr(0, creditCardNumber.length - 4); //substr extrae parte del string y retorna el N° específico
+        const lastFourDigits = creditCardNumber.substr(creditCardNumber.length - 4, creditCardNumber.length); //"copia" de los últimos 4 dígitos
 
-        const ofuscated = toOfuscate.replace(/\d/g, "#");
+        const ofuscated = toOfuscate.replace(/\d/g, "#"); 
         return ofuscated + lastFourDigits;
     }
 };
