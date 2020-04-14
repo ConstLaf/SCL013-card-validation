@@ -1,5 +1,5 @@
-import { validator } from "./validator.js";
-console.log(validator);
+import validator from "./validator.js";
+//console.log(validator);
 //import validator from "./validator.js"; -->  No funciona
 
 
@@ -14,7 +14,9 @@ document.querySelectorAll('.goBack').forEach(function(button) {
 //botón iniciar
 document.getElementById("iniciar").addEventListener("click", validaPage);
 
-// TODO : Preguntar por modulos, node
+/*const number = document.getElementById("cardNumber").setAttribute("required", "creditCardNumber");
+number.required= true;*/
+
 document.getElementById("validate").addEventListener("click", displayValidator);
 
 document.getElementById("tryAgain").addEventListener("click", tryAgainPage);
@@ -84,10 +86,3 @@ function volverInicio() {
     const invalidPage = document.getElementById("tarjeta_no_valida");
     invalidPage.style.display = 'none';
 }
-
-
-
-
-//función del botón validar
-
-//función del botón vuelve a intentarlo --> clearBuscar en el form (reset)

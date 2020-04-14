@@ -1,11 +1,28 @@
 body {
-    /*background-image: url("https://webgradients.com/public/webgradients_png/034%20Lemon%20Gate.png");*/
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: linear-gradient(to right,rgb(198, 198, 206),rgb(183, 183, 218));
+    background-color: whitesmoke;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom:50px;
+    margin-left: 100px;
+      
 }
-    
+   
+section {
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: auto;
+}
+
+#logo {
+    box-shadow: none;
+    position: absolute;
+    border-radius: unset;
+    max-width: 10%;
+    max-height: 10%;
+    top:100 px;
+    left:50 px;
+}
 
 img {
         border-radius: 45%;
@@ -21,71 +38,86 @@ img {
     button {
         border-radius: 10px;
         padding: 15px 32px;
-        text-align: center;
-        font-size: 16px;
         transition-duration: 0.4s;
-        width: 20%;
+        width: 30%;
         text-decoration: none;
-        font-family: 'Times New Roman';
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 20px;
-        background-color:rgb(236, 182, 182);
-        border-style: solid;
-        border-color:rgb(88, 84, 84);
-        border-width: 2px;
+        background-color: #1D4E89;
+        color: whitesmoke;
+        margin-top: 25px;
+        
+          
     }
     
     button:hover {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
-    
-    #goBack {
-        background-color: rgb(236, 182, 182);
-        /*width: 20%;
-         position: relative;*/
-         float:left;
-         line-height: 3px;
-         width: 13%;
-         margin-top: 100px;
-         margin-left:170px;
-         position:absolute;
-         top:0;
-         left:0;
-         text-align: center;
-       /*queda pendiente que se vea más hacia arriba*/
-         
-        
-    }
 
     input[type=text] {
         width: 40%;
         padding: 12px 20px;
-        margin: 8px 0;
+        margin-top: 80px;
+        margin-bottom: 30px;
+        margin-left: 300px;
         box-sizing: border-box;
-        border: 2px rgb(88, 84, 84);
+        border: 1px solid #1D4E89;
         border-radius: 4px;
-        font-family: 'Times New Roman';
+        font-family: sans-serif;
         font-size: 30px;
         text-align: center;
+        display: block;
+        
       }
 
-      input[type=text]:focus {
-        border: 1px solid rgb(88, 84, 84);
-        transition-duration: 0.6s;
+      h1 {
+        font-family: sans-serif;
+        color: #333333;
+        font-size: 50px;
+      }
+
+      h2 {
+        font-family: sans-serif;
+        color: #333333;
+        font-size: 22px; 
+        margin-top: 80px;
       }
 
       h3 {
-          font-family: 'Times New Roman';
+          font-family: sans-serif;
+          color: #333333;
           font-weight: bolder;
           font-size: 36px;
       }
-    
-    .box {
-        /* width: 1000px;
-        /*height: 800px; */
+
+      .validated {
+        font-family: sans-serif;
+        color: #008522;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+/*margenes*/ 
+      .noValidated {
+        font-family: sans-serif;
+        color: #DA291C;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+/*margenes*/
+
+    label {
+        font-family: sans-serif;
+        color: #333333;
+        font-size: 30px;
         
+
+    }
+
+    .box {
+        width: 1000px;
+        height: 800px; 
         margin: 50px;
         padding: 25px;
-        border: 3px solid grey;
         margin-left: auto;
         margin-right: auto;
         margin-top: auto;

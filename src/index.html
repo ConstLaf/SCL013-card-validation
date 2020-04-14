@@ -9,13 +9,11 @@
 </head>
 
 <body>
-    <div id="titulo_Bienvenida">
-        <h1>Bienvenidos a PacPay</h1>
-    </div>
-
+    <img src="Images/Logo Pacpay-01.png" id="logo"> 
     <section id="pag_Bienvenida">
         <div id="foto_inicio" class="box">
-            <img src="https://www.dpogroup.com/africa/wp-content/uploads/2018/06/shutterstock_313339838_1440.jpg" class="responsive">
+            <h1>Bienvenidos a PacPay</h1>
+            <img src="Images/foto_inicio.png">
             <h2>Para continuar con tu compra, debes validar tu número de tarjeta de crédito</h2>
             <h2>¡Haz click en "Iniciar"!</h2>
             <form>
@@ -28,18 +26,19 @@
         <div class="box">
         
             <h3 >Ingresa tu N° de Tarjeta de Crédito</h3>
-                <form>
-                <input type="text" id="cardNumber" placeholder="1111 2222 3333 4444" maxlength="16" required>
-                 <!--value="4049849606388036"-->
-                <button type="button" id="validate">Validar</button>
-                <button type="button" class="goBack">Volver</button>
-            </form>
+                <form>    
+                    <input type="text" id="cardNumber" placeholder="1111 2222 3333 4444" maxlength="16">
+                    <button type="button" id="validate">Validar</button>
+                    <button type="button" class="goBack">Volver</button>
+                </form>
         </div>
     </section>
 
     <section id="tarjeta_valida">
         <div class="box">
             <h3>Ingresa tu N° de Tarjeta de Crédito</h3>
+            <img src="Images/happy-family.png">
+            <br>
             <label id="maskifiedNumber"></label>
             <form>
                 <p class="validated">¡Tarjeta validada!</p>
@@ -51,11 +50,12 @@
 
     <section id="tarjeta_no_valida">
         <div class="box">
+            <img src="Images/cerditcard.png">
             <form>
-                <p>¡Tarjeta no válida!</p>
-                <p>Vuelve a intentarlo</p>
-                <button type="button" class="goBack">Volver</button>
-                <button type="button" id="tryAgain">Intentar de nuevo</button>
+                <p class="noValidated">¡Tarjeta no válida!</p>
+                <p class="noValidated">Vuelve a intentarlo</p>
+                <button type="button" class="goBack">Volver</button>    
+                <button type="button" id="tryAgain">Intentar nuevamente</button>
             </form>
         </div>
     </section>

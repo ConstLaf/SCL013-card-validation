@@ -4,11 +4,11 @@
 const validator = {
 
     isValid: function (creditCardNumber) {    
-        let hasToDuplicate = false;
-        let sum = 0;
+        let hasToDuplicate = false; //interruptor ON/OFF
+        let sum = 0;                //suma de los carácteres final
         
-        for (let index = creditCardNumber.length - 1; index >= 0; index--) {
-            let character = creditCardNumber.charAt(index);
+        for (let index = creditCardNumber.length - 1; index >= 0; index--) { // itera del último hacia el primeroN°[0-n]
+            let character = creditCardNumber.charAt(index);                 //index se actualiza dependiendo del número
             let digit = parseInt(character);
 
             if (hasToDuplicate) {
@@ -37,7 +37,7 @@ const validator = {
     }
 };
 
-export {validator};
+export default validator;
 
 //validator.isValid("4049849606388036");
 //validator.maskify("4049849606388036");
