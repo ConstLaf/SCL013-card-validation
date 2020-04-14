@@ -48,3 +48,5 @@ algoritmo de Luhn, para esto creamos un sitio de pagos online llamado PacPay.
   
 ## 4. Conclusión
     Como se puede apreciar en este readme, todo el proceso de diseño de la aplicación y su producto final han resultado muy diferentes. A pesar de lo anterior, logramos terminar con una página funcional y que cumple con los objetivos planteados. Sin embargo, como autocrítica constructiva sentimos que tenemos pendiente incorporar atributos que encontramos faltantes. Como por ejemplo, colocar en el input de tipo texto el "required" con Javascript, mejorar el estilo de la página con CSS y hacerlo responsive.
+
+    .
